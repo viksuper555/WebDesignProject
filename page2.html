@@ -1,6 +1,10 @@
 <!DOCTYPE HTML5>
 <html>
 <head>
+<link rel="stylesheet" href="index.css">
+<script src="sorter.js">
+</script>
+
 <div >
     <a href="index.html">Home</a>
     <a href="page1.html">Link1</a>
@@ -8,35 +12,7 @@
     <a href="page3.html">Link3</a>
   </div>
 
-<style>
-  .dropbtn {
-    background-color: #0066fffb;
-    color: #ffffff;
-    padding: 16px;
-    font-size: 16px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #00000033;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .show {display: block;}
-  </style>
+
   <!--List-->
   <ul id="id01"> 
       <li>Oslo</li>
@@ -48,17 +24,13 @@
     </ul>
 </head>
 <body>
-		<script>
-			  var a = document.getElementById("mylink");
-			  a.onclick = sortListDir()
-		</script>
  <!--Dropdowns-->
 <div class="dropdown">
   <button onclick="drop()" class="dropbtn">Сортирай</button>
   <div id="Dropdown_sort" class="dropdown-content">
-    <a href ="#" onclick="sortListDir('asc')">Име(asc)</a>
-    <a href="#" onclick="sortListDir('desc')">Цена възходяща (desc)</a>
-    <a href="#" onclick="sortListDir()">Цена низходяща//none</a>
+    <a href ="#" onclick="sortListAsc()">Име(asc)</a>
+    <a href="#" onclick="sortListDesc()">Цена възходяща (desc)</a>
+    <a href="#" onclick="sortListAsc()">Цена низходяща//none</a>
   </div>
 </div>
 
@@ -81,43 +53,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-
-<script>
-		function sortListDir(dir) {
-		  var list, i, switching, b;
-		  list = document.getElementById("id01");
-		  switching = true;
-		  while (switching) {
-			switching = false;
-			b = list.getElementsByTagName("LI");
-			if(dir == 'asc')
-			{		
-				for (i = 0; i < (b.length - 1); i++) 
-				{
-				if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase())
-					{
-					b[i].parentNode.insertBefore(b[i + 1], b[i]);
-					switching = true;
-					break;
-					}
-				}
-			}
-			else 
-			if(dir == 'desc')
-			{
-				for (i = (b.length - 1); i < 1; i--) 
-				{
-				if (b[i].innerHTML.toLowerCase() > b[i - 1].innerHTML.toLowerCase())
-					{
-					b[i].parentNode.append(b[i], b[i-1]);
-					switching = true;
-					break;
-					}
-				}
-			}
-		  }
-		}
-		</script>
 </body>
 
 
