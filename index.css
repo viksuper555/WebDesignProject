@@ -1,5 +1,21 @@
-
-
+/*
+body:hover{
+    cursor: progress;
+}
+*/
+  .header{
+      text-align: left;
+      background-color: #001763;
+      padding: 30px;
+      word-spacing: 30px;
+  }
+  .header a{
+    -webkit-text-fill-color: #ffffff;
+    font-size: 30px;
+    text-decoration-line: none;
+    }   
+    
+  
   .dropbtn {
     background-color: #0066fffb;
     color: #ffffff;
@@ -8,7 +24,9 @@
   }
 
   .dropbtn:hover{
-    background-color: red;
+    background-color: #013c94fb;
+    cursor: pointer;
+    
   }
   
   .dropdown {
