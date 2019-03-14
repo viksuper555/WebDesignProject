@@ -2,18 +2,61 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-<header class = "header">
-        <a href="index.html" class="link">Home</a>
-        <a href="page1.html" class="link">Link1</a>
-        <a href="page2.html" class="link">Link2</a>
-        <a href="page3.html" class="link">Link3</a>
+    <header class = "header">
+        <a href="index.html">Главно меню</a>
+    <a href="page1.html">Брички</a>
+    <a href="page2.html">Продай бричка</a>
+    <a href="page3.html">За Автокъщата</a>
+    <span class="TitleHeader">Возило.бг</span>
       </header>
 </head>
-<body>
-<div">
-    <h1>Возило.бг</h1>
-    <p>Намерете перфектното возило или продайте старото</p>
-</div>
+<body onload="changeBackground()" background="Photos/background1.jpg">
+
+<script>
+function changeBackground()
+    {        
+    var index = 1;
+    for(index = 1;index<5;index++)
+    {   alert(index);
+        if(index => 5)
+        {
+            index = 1;
+        }
+        
+        setTimeout(function(){changeImage(index);}, 1000);
+        
+    }
+    }
+function changeImage(int)
+{
+    var s;
+    alert(int);
+    switch(int)
+    {
+        case 1:
+            s = "url('Photos/background1.jpg')"
+            break;
+        
+        case 2:
+        
+        s = "url('Photos/background2.jpg')"
+        break;
+        
+        case 3:
+        
+        s = "url('Photos/background3.jpg')"
+        break;
+        
+        case 4:
+        
+        s = "url('Photos/background4.jpg')"
+        break;
+        
+    }
+    document.body.style.backgroundImage = s;
+    
+}
+</script>
 </body>
 
 </html>
