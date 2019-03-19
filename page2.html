@@ -2,8 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="index.css">
-<script src="sorter.js">
-</script>
     <header class="header">
         <a href="index.html">Главно меню</a>
     <a href="page1.html">Брички</a>
@@ -14,44 +12,7 @@
       </header>
 </head>
 <body>
-    <!--List-->
-    <ul id="id01"> 
-        <li>Oslo</li>
-        <li>Stockholm</li>
-        <li>Helsinki</li>
-        <li>Berlin</li>
-        <li>Rome</li>
-        <li>Madrid</li>
-      </ul>
-  <!--Dropdowns-->
-<div class="dropdown">
-  <button onclick="drop()" class="dropbtn">Сортирай</button>
-  <div id="Dropdown_sort" class="dropdown-content">
-    <a href ="#" onclick="sortListAsc()">Име(asc)</a>
-    <a href="#" onclick="sortListDesc()">Цена възходяща (desc)</a>
-    <a href="#" onclick="sortListAsc()">Цена низходяща//none</a>
-  </div>
-</div>
-
-
-<script>
-function drop() {
-  document.getElementById("Dropdown_sort").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      	var openDropdown = dropdowns[i];
-      	if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    
 </body>
 
 

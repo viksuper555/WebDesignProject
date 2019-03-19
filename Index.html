@@ -10,53 +10,7 @@
     <span class="TitleHeader">Возило.бг</span>
       </header>
 </head>
-<body onload="changeBackground()" background="Photos/background1.jpg">
-
-<script>
-function changeBackground()
-    {        
-    var index = 1;
-    for(index = 1;index<5;index++)
-    {   alert(index);
-        if(index => 5)
-        {
-            index = 1;
-        }
-        
-        setTimeout(function(){changeImage(index);}, 1000);
-        
-    }
-    }
-function changeImage(int)
-{
-    var s;
-    alert(int);
-    switch(int)
-    {
-        case 1:
-            s = "url('Photos/background1.jpg')"
-            break;
-        
-        case 2:
-        
-        s = "url('Photos/background2.jpg')"
-        break;
-        
-        case 3:
-        
-        s = "url('Photos/background3.jpg')"
-        break;
-        
-        case 4:
-        
-        s = "url('Photos/background4.jpg')"
-        break;
-        
-    }
-    document.body.style.backgroundImage = s;
-    
-}
-</script>
+<body>
 </body>
 
 </html>

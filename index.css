@@ -62,11 +62,3 @@ body:hover{
     display: block;
   }
   .show {display: block;}
-
-body{
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 0px;
-  background-position-x: center;
-  background-color: #F1FAEE;
-}
