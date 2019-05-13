@@ -62,3 +62,6 @@ body:hover{
     display: block;
   }
   .show {display: block;}
+  .current{ 
+    color: #A8DADC !important;
+}
