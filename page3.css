@@ -1,11 +1,11 @@
 .owl-carousel{
     margin-top: 5%;
-    width: 30%;
+    width: 40%;
     margin-bottom: 50px;
     margin-left: 30%;
 }
 .carousel-image{
-    block-size: 10%;   
+    block-size: 15%;   
     object-fit: contain;
 }
 #Partners{

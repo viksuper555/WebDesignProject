@@ -54,6 +54,16 @@ form{
             width: 150%;
         }
     }
-#buton4e{
+#submit-btn{
     margin-left: 40%;
+    background-color: #1D3557;
+    padding: 12px 28px;
+    font-size: 130%;
+    border:none;
+    border-radius: 4px;
+}
+#submit-btn:hover{
+    background-color: #fff;
+    -webkit-text-fill-color: #1D3557;
+    border: 2px solid #A8DADC;
 }

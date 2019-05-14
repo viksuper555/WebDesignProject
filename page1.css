@@ -23,10 +23,12 @@ body {
     margin-bottom: -1px;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
+    -webkit-text-fill-color: #0263ca;
 }
 .list-group-item:hover{
     background-color: #1D3557;
     animation-duration: 0.2s;
+    -webkit-text-fill-color: #fff;
 }
 .list-group-item-selected{
     position: relative;
