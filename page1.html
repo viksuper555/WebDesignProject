@@ -61,9 +61,14 @@
       </div>
       <!-- /.col-lg-3 -->
       <script>
-        document.getElementById("luxury").onclick = function() {reset(), luxuryView()};
+        var luxury = document.getElementById("luxury");       
+        var economy = document.getElementById("economy");
+        var cheap = document.getElementById("cheap"); 
+        luxury.onclick = function() {reset(), luxuryView()};
         function luxuryView() {
-          document.getElementById("luxury").style.backgroundColor = "#1D3557";
+          luxury.className = "list-group-item-selected";         
+          economy.className = "list-group-item";
+          cheap.className = "list-group-item";
           var descriptions = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12"];
           var titles = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12"];
           var prices = ["200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв"];
@@ -75,8 +80,11 @@
             document.getElementsByClassName("card-price")[i].innerHTML = prices[i];
           }                           
         }
-        document.getElementById("economy").onclick = function() {reset(), economyView()};
-        function economyView() {
+        economy.onclick = function() {reset(), economyView()};
+        function economyView() {      
+          luxury.className = "list-group-item";         
+          economy.className = "list-group-item-selected";
+          cheap.className = "list-group-item";
           var descriptions = ["ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12"];
           var titles = ["ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12"];
           var prices = ["20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв"];
@@ -88,8 +96,11 @@
             document.getElementsByClassName("card-price")[i].innerHTML = prices[i];
           }                           
         }
-        document.getElementById("cheap").onclick = function() {reset(), cheapView()};
-        function cheapView() {
+        cheap.onclick = function() {reset(), cheapView()};
+        function cheapView() {         
+          luxury.className = "list-group-item";         
+          economy.className = "list-group-item";
+          cheap.className = "list-group-item-selected";
           var descriptions = ["CTest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "CTest7", "ETest8", "ETest9", "ETest10", "ETest11", "CTest12"];
           var titles = ["ETest1", "CTest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "CTest8", "ETest9", "ETest10", "ETest11", "CTest12"];
           var prices = ["2.000лв", "20.000лв", "2.000лв", "20.000лв", "2.000лв", "20.000лв", "20.000лв", "2.000лв", "2.000лв", "20.000лв", "2.000лв", "2.000лв"];
