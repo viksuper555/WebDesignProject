@@ -8,12 +8,13 @@
   <title>За Автокъщата</title>
 <!-- Bootstrap core CSS -->
  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+ <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.theme.default.min.css">
+ 
  <!-- Custom styles for this template -->
+ <link href="page3.css" rel="stylesheet">
  <link href="page1.css" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
-<script src="sorter.js">
-</script>
+ <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -43,6 +44,15 @@
       </div>
     </div>
   </nav>
+  
+  <h1 id="Partners">Partners:</h1>
+  <div class="owl-carousel">
+    <img class="carousel-image" src="Images/Logos/tesla.png">
+    <img class="carousel-image" src="Images/Logos/mercedes.png">
+    <img class="carousel-image" src="Images/Logos/audi.png">
+    <img class="carousel-image" src="Images/Logos/bmw.png">  
+    <img class="carousel-image" src="Images/Logos/vw.png">
+  </div>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -51,11 +61,12 @@
         </div>
         <!-- /.container -->
       </footer>
-    
-      <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+      <script src="OwlCarousel2/docs_src/assets/vendors/jquery.min.js"></script>
+      <script src="OwlCarousel2/dist/owl.carousel.min.js"></script>
+      
+      <script src="carousel.js"></script>
 </body>
 
 </html>
