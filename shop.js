@@ -17,7 +17,7 @@ var cheap = document.getElementById("cheap");
     "Moskwitsch", "Citroen C2", "Audi A3", "BMW M3", "Peugeot 203", "Opel Astra", "Mercedes 190"];
     var cheapTitles = ["Golf 3", "Volkswagen Polo", "Ford Escort", "Renault Megan", "Renault Clio",
     "Moskwitsch", "Citroen C2", "Audi A3", "BMW M3", "Peugeot 203", "Opel Astra", "Mercedes 190"];
-    var cheapPrices = ["2.000лв", "20.000лв", "2.000лв", "20.000лв", "2.000лв", "20.000лв", "20.000лв", "2.000лв", "2.000лв", "20.000лв", "2.000лв", "2.000лв"];
+    var cheapPrices = ["2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв"];
     
 luxury.onclick = function() {reset(), luxuryView()};
 function luxuryView() {
