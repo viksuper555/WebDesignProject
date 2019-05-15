@@ -1,8 +1,3 @@
-/*
-body:hover{
-    cursor: progress;
-}
-*/
   header{
 
       background-color: #1D3557;
@@ -64,4 +59,7 @@ body:hover{
   .show {display: block;}
   .current{ 
     color: #A8DADC !important;
+}
+.fab{
+  margin-top: auto;
 }

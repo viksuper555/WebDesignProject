@@ -16,6 +16,8 @@ body {
     margin-bottom: 1.5rem;
     margin-top: 2rem;
     margin-left: 21%;
+    
+    flex: 1;
 }
 form{ 
     margin: 0 auto; 
@@ -59,7 +61,7 @@ form{
     background-color: #1D3557;
     padding: 12px 28px;
     font-size: 130%;
-    border:none;
+    border: 2px solid transparent;
     border-radius: 4px;
 }
 #submit-btn:hover{
