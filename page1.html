@@ -59,91 +59,6 @@
           <a id="cheap" href="#" class="list-group-item">Евтини</a>
         </div>
       </div>
-      <!-- /.col-lg-3 -->
-      <script>
-        var luxury = document.getElementById("luxury");       
-        var economy = document.getElementById("economy");
-        var cheap = document.getElementById("cheap"); 
-        luxury.onclick = function() {reset(), luxuryView()};
-        function luxuryView() {
-          luxury.className = "list-group-item-selected";         
-          economy.className = "list-group-item";
-          cheap.className = "list-group-item";
-          var descriptions = ["Mercedes-Benz S-Class", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12"];
-          var titles = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12"];
-          var prices = ["200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв"];
-          for(i=0;i<12;i++)
-          {
-            document.getElementsByClassName("card-text")[i].innerHTML = descriptions[i];
-            document.getElementsByClassName("card-title-text")[i].innerHTML = titles[i];
-            document.getElementsByClassName('card-img-top')[i].src="Images/Content/Luxury/" + [i+1] + ".jpg";
-            document.getElementsByClassName("card-price")[i].innerHTML = prices[i];
-          }                           
-        }
-        economy.onclick = function() {reset(), economyView()};
-        function economyView() {      
-          luxury.className = "list-group-item";         
-          economy.className = "list-group-item-selected";
-          cheap.className = "list-group-item";
-          var descriptions = ["ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12"];
-          var titles = ["ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12"];
-          var prices = ["20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв"];
-          for(i=0;i<12;i++)
-          {
-            document.getElementsByClassName("card-text")[i].innerHTML = descriptions[i];
-            document.getElementsByClassName("card-title-text")[i].innerHTML = titles[i];
-            document.getElementsByClassName('card-img-top')[i].src="Images/Content/Economy/" + [i+1] + ".jpg";
-            document.getElementsByClassName("card-price")[i].innerHTML = prices[i];
-          }                           
-        }
-        cheap.onclick = function() {reset(), cheapView()};
-        function cheapView() {         
-          luxury.className = "list-group-item";         
-          economy.className = "list-group-item";
-          cheap.className = "list-group-item-selected";
-          var descriptions = ["CTest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "CTest7", "ETest8", "ETest9", "ETest10", "ETest11", "CTest12"];
-          var titles = ["ETest1", "CTest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "CTest8", "ETest9", "ETest10", "ETest11", "CTest12"];
-          var prices = ["2.000лв", "20.000лв", "2.000лв", "20.000лв", "2.000лв", "20.000лв", "20.000лв", "2.000лв", "2.000лв", "20.000лв", "2.000лв", "2.000лв"];
-          for(i=0;i<12;i++)
-          {
-            document.getElementsByClassName("card-text")[i].innerHTML = descriptions[i];
-            document.getElementsByClassName("card-title-text")[i].innerHTML = titles[i];
-            document.getElementsByClassName('card-img-top')[i].src="Images/Content/Cheap/" + [i+1] + ".jpg";
-            document.getElementsByClassName("card-price")[i].innerHTML = prices[i];
-          }                           
-        }
-        function randomizeContent()
-        {
-          var descriptions = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12",
-          "ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12",
-          "CTest1", "CTest2", "CTest3", "CTest4", "CTest5", "CTest6", "CTest7", "CTest8", "CTest9", "CTest10", "CTest11", "CTest12"];
-          var titles = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10", "Test11", "Test12",
-          "ETest1", "ETest2", "ETest3", "ETest4", "ETest5", "ETest6", "ETest7", "ETest8", "ETest9", "ETest10", "ETest11", "ETest12",
-          "CTest1", "CTest2", "CTest3", "CTest4", "CTest5", "CTest6", "CTest7", "CTest8", "CTest9", "CTest10", "CTest11", "CTest12"];
-          var prices = ["200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв", "200.000лв",
-          "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв", "20.000лв",
-          "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв", "2.000лв"];
-          var arr = []
-          while(arr.length < 6){
-              var r = Math.floor(Math.random()*36) + 1;
-              if(arr.indexOf(r) === -1) arr.push(r);
-          }
-          for(i=0;i<6;i++)
-          {
-            if(arr[i] <= 12)             
-              var str = "Images/Content/Luxury/" + arr[i] + ".jpg";
-            if(arr[i] <= 24 && arr[i] > 12)
-                var str = "Images/Content/Economy/" + (arr[i]-12) + ".jpg";
-            if(arr[i] <= 36 && arr[i] > 24)
-                var str = "Images/Content/Cheap/" + (arr[i]-24) + ".jpg";
-            
-            document.getElementsByClassName("card-text")[i].innerHTML = descriptions[arr[i]-1];
-            document.getElementsByClassName("card-title-text")[i].innerHTML = titles[arr[i]-1];
-            document.getElementsByClassName('card-img-top')[i].src=str;
-            document.getElementsByClassName("card-price")[i].innerHTML = prices[arr[i]-1];
-          }
-        }
-      </script>
 
       <div class="col-lg-9">
 
@@ -396,7 +311,7 @@
     </div>
     <!-- /.container -->
   </footer>
-
+  <script src="shop.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
