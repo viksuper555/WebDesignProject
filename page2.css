@@ -1,7 +1,6 @@
 body {
     padding-top: 56px;
   }
-
 .navbar{
     background-color: #1D3557 !important;
 }
@@ -16,8 +15,10 @@ body {
     margin-bottom: 1.5rem;
     margin-top: 2rem;
     margin-left: 21%;
-    
     flex: 1;
+}
+.submit_btn{
+    -webkit-text-fill-color: #fff !important;
 }
 form{ 
     margin: 0 auto; 
@@ -68,4 +69,10 @@ form{
     background-color: #fff;
     -webkit-text-fill-color: #1D3557;
     border: 2px solid #A8DADC;
+}
+footer{
+    position:relative;
+   width:100%;
+   margin-top: 7%;
+   height:10%; 
 }

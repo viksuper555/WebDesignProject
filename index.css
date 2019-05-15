@@ -1,8 +1,7 @@
+
   header{
 
       background-color: #1D3557;
-      margin-left: -20px;
-      margin-right: -8px;    
   }
   header a{
     display: inline-block;
@@ -51,7 +50,7 @@
   }
   
   .dropdown-content a {
-    color: black;
+    color: #1D3557;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -62,4 +61,25 @@
 }
 .fab{
   margin-top: auto;
+}
+.btn-outline {
+  border-color: #1D3557;
+}
+.btn {
+  -webkit-text-fill-color: #fff;
+}
+.btn:hover{
+  -webkit-text-fill-color: #1D3557;
+  background-color: white;
+  border-color: #A8DADC;
+}
+section.contact ul.list-social li.social-instagram a {
+  background-color: #E8424E;
+}
+
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: rgb(184, 50, 59);
+}
+.bg-primary{
+  background:#ebd86e !important;
 }
