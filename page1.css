@@ -39,11 +39,7 @@ body {
     background-color: #1D3557;
     -webkit-text-fill-color: #fff;
 }
-.a{
-    color: #A8DADC !important;
-}
 a:hover {
-    color: #fff !important;
     text-decoration: none !important;
 }
 
