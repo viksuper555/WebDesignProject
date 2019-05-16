@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Продай возило</title>
-  <link rel="icon" href="favicon.ico">
-<!-- Bootstrap core CSS -->
- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
- <!-- Custom styles for this template -->
-<link href="page2.css" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+  <title>Продай возило</title>
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="favicon.ico" rel="icon">
+  <link href="page2.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </script>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -43,46 +43,47 @@
       </div>
     </div>
   </nav>
-<!--Form-->
-<div class="body-content">
-  <h2 class="my-4">Продай своята бричка сега</h2>
-  <form id="sell-car" name="SellCar" action="/action_page.php" onsubmit="event.preventDefault(); return validateForm()" method="post">
-      <div class="form-group">
-          <label for="title-control">Име и Фамилия</label>
-          <input type="text" name="fname" required minlength="6">
-      </div>
-      <div class="form-group" id="choose-photo">      
-        <label for="image-control">Избери снимка</label>
-        <input type="file" id="image-control" name="image-control" accept="image/x-png,image/gif,image/jpeg" required>
-        <img id="preview" src="#"/>
-      </div>
-      <div class="form-group">
-          <label for="title-control">Заглавие</label>
-          <input id="ftitle" type="text" name="ftitle" required minlength="15">
-      </div>
-      <div class="form-group">
-        <label for="select-control1">Избери клас</label>
-        <select class="form-control" id="select-control1">
-          <option>Луксозна</option>
-          <option>Икономична</option>
-          <option>Евтина</option>
-        </select>
-      </div>
-      <div class="form-group">
-          <label for="title-control">Цена</label>
-          <input id="fprice" type="number" name="fprice" required value="5000" min="1000" maxlength="12">
-      </div>
-      <div class="form-group">
-        <label for="fdescription">Описание</label>
-        <textarea id="fdescription" type="text" rows="5" required minlength="30"></textarea>
-      </div>
-      <div class="form-group">
-          <label for="femail">Контакт</label>
-          <input type="email"  id="femail" placeholder="name@gmail.com" required>
-      </div>
-      <button id="submit-btn"type="submit" class=".submit_btn btn-primary">Продай</button>
-  </form>
-</div>
+
+  <!--Form-->
+  <div class="body-content">
+    <h2 class="my-4">Продай своята бричка сега</h2>
+    <form id="sell-car" name="SellCar" action="/action_page.php" onsubmit="event.preventDefault(); return validateForm()" method="post">
+        <div class="form-group">
+            <label for="title-control">Име и Фамилия</label>
+            <input type="text" name="fname" required minlength="6">
+        </div>
+        <div class="form-group" id="choose-photo">      
+          <label for="image-control">Избери снимка</label>
+          <input type="file" id="image-control" name="image-control" accept="image/x-png,image/gif,image/jpeg" required>
+          <img id="preview" src="#"/>
+        </div>
+        <div class="form-group">
+            <label for="title-control">Заглавие</label>
+            <input id="ftitle" type="text" name="ftitle" required minlength="15">
+        </div>
+        <div class="form-group">
+          <label for="select-control1">Избери клас</label>
+          <select class="form-control" id="select-control1">
+            <option>Луксозна</option>
+            <option>Икономична</option>
+            <option>Евтина</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="title-control">Цена</label>
+            <input id="fprice" type="number" name="fprice" required value="5000" min="1000" maxlength="12">
+        </div>
+        <div class="form-group">
+          <label for="fdescription">Описание</label>
+          <textarea id="fdescription" type="text" rows="5" required minlength="30"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="femail">Контакт</label>
+            <input type="email"  id="femail" placeholder="name@gmail.com" required>
+        </div>
+        <button id="submit-btn"type="submit" class=".submit_btn btn-primary">Продай</button>
+    </form>
+  </div>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -93,8 +94,8 @@
       </footer>
     
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="bootstrap/js/jquery.min.js"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="image.js"></script>
       <script src="form.js"></script>
 </body>

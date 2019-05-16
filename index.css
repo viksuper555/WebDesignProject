@@ -1,63 +1,62 @@
+header{
+  background-color: #1D3557;
+}
+header a{
+  display: inline-block;
+  margin-inline-start: 1%;
+  padding: 20px;  
+  -webkit-text-fill-color: #F1FAEE;
+  font-size: 150%;
+  text-decoration-line: none;   
+}   
+header a:hover{
+  background-color: #457B9D;
+}
+header span{
+  padding: 0.7%; 
+  float: right;
+  margin-right: 3%;
+  -webkit-text-fill-color: #A8DADC;
+  text-shadow: 0px 0px 30px #457B9D;
+  font-size: 40px;
+}
 
-  header{
+.dropbtn {
+  background-color: #457B9D;
+  color: #F1FAEE;
+  padding: 16px;
+  font-size: 16px;
+}
 
-      background-color: #1D3557;
-  }
-  header a{
-    display: inline-block;
-    margin-inline-start: 1%;
-    padding: 20px;  
-    -webkit-text-fill-color: #F1FAEE;
-    font-size: 150%;
-    text-decoration-line: none;   
-    }   
-    header a:hover{
-    background-color: #457B9D;
-    }
-  header span{
-    padding: 0.7%; 
-    float: right;
-    margin-right: 3%;
-    -webkit-text-fill-color: #A8DADC;
-    text-shadow: 0px 0px 30px #457B9D;
-    font-size: 40px;
-    }
+.dropbtn:hover{
+  background-color: #A8DADC;
+  cursor: pointer;
+}
 
-  .dropbtn {
-    background-color: #457B9D;
-    color: #F1FAEE;
-    padding: 16px;
-    font-size: 16px;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  .dropbtn:hover{
-    background-color: #A8DADC;
-    cursor: pointer;
-    
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #00000033;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: #1D3557;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .show {display: block;}
-  .current{ 
-    color: #A8DADC !important;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1D3557;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show {
+  display: block;
+}
+.current{ 
+  color: #A8DADC !important;
 }
 .fab{
   margin-top: auto;

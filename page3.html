@@ -7,15 +7,16 @@
   <meta name="author" content="">
   <title>За Автокъщата</title>
   <link rel="icon" href="favicon.ico">
-<!-- Bootstrap core CSS -->
- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.min.css">
- <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.theme.default.min.css">
- <!-- Custom styles for this template -->
- <link href="page3.css" rel="stylesheet">
- <link href="page1.css" rel="stylesheet">
- <link rel="stylesheet" href="index.css">
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="bootstrap/css/owl.theme.default.min.css" rel="stylesheet" > 
+
+  <link href="page3.css" rel="stylesheet">
+  <link href="page1.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -44,57 +45,58 @@
       </div>
     </div>
   </nav>
-  
-<div class="aboutme-section">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="aboutme">
-                  <h2 class="aboutme-title">About Me</h2>
-                  <p class="aboutme-text">My name is Viktor Kolev. 
-                    I'm a student from Sofia and I sell cars.
-                    I'm also a skier and a badmintoner and that's only
-                    a small piece of the interests of mine.
-                    I would be happy if you want to read more
-                    about me, my interests and some of my thoughts
-                    in my twitter account and
-                    eventually get in touch with me.</p>
-                   </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div>
-                  <img id="me"src="Images/Aboutme/Me.jpg" >
-              </div>
-          </div>
+  <!-- About me section -->
+  <div class="aboutme-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="aboutme">
+                    <h2 class="aboutme-title">About Me</h2>
+                    <p class="aboutme-text">My name is Viktor Kolev. 
+                      I'm a student from Sofia and I sell cars.
+                      I'm also a skier and a badmintoner and that's only
+                      a small piece of the interests of mine.
+                      I would be happy if you want to read more
+                      about me, my interests and some of my thoughts
+                      in my twitter account and
+                      eventually get in touch with me.</p>
+                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div>
+                    <img id="me"src="Images/Aboutme/Me.jpg" >
+                </div>
+            </div>
+    </div>
   </div>
-</div>
-</div>
-<div class="aboutme-section">
-  <div class="container">
-      <div class="row">
+  </div>
+  <!-- Partners section -->
+  <div class="aboutme-section">
+      <div class="container">
+        <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="aboutme">
-                  <h2 class="aboutme-title">Partners</h2>
-                  <p class="aboutme-text">Partnerships with these key stakeholders are important to the success of Vozilo sales company, its members and sustainability as a whole.</p>
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="owl-carousel">
-                <img class="carousel-image" src="Images/Logos/tesla.png">
-                <img class="carousel-image" src="Images/Logos/mercedes.png">
-                <img class="carousel-image" src="Images/Logos/audi.png">
-                <img class="carousel-image" src="Images/Logos/bmw.png">  
-                <img class="carousel-image" src="Images/Logos/vw.png">   
-                <img class="carousel-image" src="Images/Logos/citroen.png">
-                <img class="carousel-image" src="Images/Logos/ford.png">
-                <img class="carousel-image" src="Images/Logos/nissan.png">
-                <img class="carousel-image" src="Images/Logos/renault.png">  
-                <img class="carousel-image" src="Images/Logos/toyota.png">
+            <div class="aboutme">
+              <h2 class="aboutme-title">Partners</h2>
+              <p class="aboutme-text">Partnerships with these key stakeholders are important to the success of Vozilo sales company, its members and sustainability as a whole.</p>
             </div>
           </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="owl-carousel">
+              <img class="carousel-image" src="Images/Logos/tesla.png">
+              <img class="carousel-image" src="Images/Logos/mercedes.png">
+              <img class="carousel-image" src="Images/Logos/audi.png">
+              <img class="carousel-image" src="Images/Logos/bmw.png">  
+              <img class="carousel-image" src="Images/Logos/vw.png">   
+              <img class="carousel-image" src="Images/Logos/citroen.png">
+              <img class="carousel-image" src="Images/Logos/ford.png">
+              <img class="carousel-image" src="Images/Logos/nissan.png">
+              <img class="carousel-image" src="Images/Logos/renault.png">  
+              <img class="carousel-image" src="Images/Logos/toyota.png">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
   
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -103,10 +105,12 @@
         </div>
         <!-- /.container -->
       </footer>
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="OwlCarousel2/docs_src/assets/vendors/jquery.min.js"></script>
-      <script src="OwlCarousel2/dist/owl.carousel.min.js"></script>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="bootstrap/js/jquery.min.js"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="bootstrap/js/jquery.min3.js"></script>
+      <script src="bootstrap/js/owl.carousel.min.js"></script>
       
       <script src="carousel.js"></script>
 </body>
